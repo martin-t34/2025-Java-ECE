@@ -47,5 +47,6 @@ public class Exo3 {
         int max = numbers[numbers.length - 1];
         System.out.println("Valeur minimale: " + min);
         System.out.println("Valeur maximale: " + max);
+        scanner.close();
     }
 }
