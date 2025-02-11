@@ -7,7 +7,6 @@ public class Main {
         GestionEtudiants gestion = new GestionEtudiants();
         Scanner scanner = new Scanner(System.in);
 
-        // Ajout de 10 étudiants pour le test
         gestion.ajouterEtudiant(new Etudiant("Alice", 20));
         gestion.ajouterEtudiant(new Etudiant("Bob", 21));
         gestion.ajouterEtudiant(new Etudiant("Charlie", 22));
@@ -27,7 +26,7 @@ public class Main {
             System.out.println("4. Quitter");
             System.out.print("Choisissez une option: ");
             int choix = scanner.nextInt();
-            scanner.nextLine();  // Consommer la nouvelle ligne
+            scanner.nextLine(); 
 
             switch (choix) {
                 case 1:
@@ -35,7 +34,7 @@ public class Main {
                     String nom = scanner.nextLine();
                     System.out.print("Entrez l'âge de l'étudiant: ");
                     int age = scanner.nextInt();
-                    scanner.nextLine();  // Consommer la nouvelle ligne
+                    scanner.nextLine();  
                     gestion.ajouterEtudiant(new Etudiant(nom, age));
                     System.out.println("Étudiant ajouté.");
                     break;
